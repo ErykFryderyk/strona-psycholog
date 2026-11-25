@@ -367,6 +367,7 @@ a.contact__item:hover { color: var(--accent-dark); }
 }
 
 @media (max-width: 760px) {
+  .hero__art { display: none; } /* grafika MKJ tylko na tabletach i komputerach */
   .nav-toggle { display: flex; position: relative; z-index: 2; }
 
   /* Pełnoekranowy panel odsłaniany „kołem” od przycisku menu */

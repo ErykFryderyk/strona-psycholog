@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-label="MKJ Psychology – terapeutka w fotelu i pacjent na kozetce">
+  <defs>
+    <!-- akwarela -->
+    <filter id="wash" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="55" xChannelSelector="R" yChannelSelector="G" result="shape"/>
+      <feGaussianBlur in="shape" stdDeviation="2.5" result="soft"/>
+      <feMorphology in="soft" operator="erode" radius="4" result="inner"/>
+      <feComposite in="soft" in2="inner" operator="out" result="edge"/>
+      <feGaussianBlur in="edge" stdDeviation="1.5" result="edgeSoft"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="4" seed="4" result="grain"/>
+      <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.9 0 0 0 -0.35" result="grainMask"/>
+      <feComposite in="soft" in2="grainMask" operator="in" result="tex"/>
+      <feMerge><feMergeNode in="soft"/><feMergeNode in="tex"/><feMergeNode in="edgeSoft"/></feMerge>
+    </filter>
+    <!-- pędzel: lekko poszarpane włosie -->
+    <filter id="brush" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- odręczna, lekko drżąca kreska -->
+    <filter id="hand" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="470" y1="70" x2="150" y2="420">
+      <stop offset="0" stop-color="#6f8786" stop-opacity=".25"/>
+      <stop offset=".25" stop-color="#2c3434"/>
+      <stop offset=".6" stop-color="#3f4d4d"/>
+      <stop offset="1" stop-color="#7f9593" stop-opacity=".35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- jasne plamy akwareli (jak szara laserunkowa plama pod postaciami w logo) -->
+  <g filter="url(#wash)">
+    <path d="M60 330c10-50 70-80 130-70 50 8 70 40 120 52 40 10 70-4 90 20 18 22-10 52-60 58-80 10-160 12-220 0-40-8-66-26-60-60z" fill="#6d8c8b" fill-opacity=".3"/>
+  </g>
+
+  <!-- łuk suchego pędzla -->
+  <g filter="url(#brush)" fill="none" stroke="url(#ink)" stroke-linecap="round">
+    <path d="M392.0 98.3A167.3 167.3 0 0 0 133.7 255.8" stroke-width="1.75" stroke-opacity="0.28"/>
+    <path d="M381.1 89.5A169.1 169.1 0 0 0 130.9 242.4" stroke-width="3.16" stroke-opacity="0.31"/>
+    <path d="M391.6 94.3A170.5 170.5 0 0 0 129.7 245.5" stroke-width="1.83" stroke-opacity="0.35"/>
+    <path d="M403.1 100.8A171.6 171.6 0 0 0 134.1 281.7" stroke-width="2.98" stroke-opacity="0.43"/>
+    <path d="M414.5 108.3A173.0 173.0 0 0 0 135.8 292.5" stroke-width="2.53" stroke-opacity="0.58"/>
+    <path d="M419.7 112.1A173.7 173.7 0 0 0 134.6 291.2" stroke-width="3.57" stroke-opacity="0.63"/>
+    <path d="M421.7 113.1A174.4 174.4 0 0 0 135.1 294.6" stroke-width="2.06" stroke-opacity="0.53"/>
+    <path d="M430.1 120.5A175.3 175.3 0 0 0 144.9 319.7" stroke-width="3.64" stroke-opacity="0.66"/>
+    <path d="M443.5 134.3A177.1 177.1 0 0 0 152.0 335.2" stroke-width="1.91" stroke-opacity="0.70"/>
+    <path d="M441.9 130.8A177.8 177.8 0 0 0 153.9 339.4" stroke-width="3.56" stroke-opacity="0.64"/>
+    <path d="M445.4 134.1A178.7 178.7 0 0 0 149.4 334.3" stroke-width="3.60" stroke-opacity="0.77"/>
+    <path d="M450.3 139.9A179.5 179.5 0 1 0 159.8 350.1" stroke-width="2.15" stroke-opacity="0.78"/>
+    <path d="M455.9 146.3A180.8 180.8 0 1 0 156.2 347.6" stroke-width="1.81" stroke-opacity="0.90"/>
+    <path d="M463.1 157.0A182.1 182.1 0 1 0 158.0 352.0" stroke-width="2.85" stroke-opacity="0.85"/>
+    <path d="M463.8 155.8A183.3 183.3 0 1 0 153.8 348.5" stroke-width="2.23" stroke-opacity="0.91"/>
+    <path d="M464.6 155.8A184.0 184.0 0 1 0 167.7 365.9" stroke-width="2.06" stroke-opacity="0.86"/>
+    <path d="M470.4 163.7A185.9 185.9 0 1 0 173.7 374.4" stroke-width="3.33" stroke-opacity="0.81"/>
+    <path d="M463.1 147.8A186.4 186.4 0 1 0 175.3 376.6" stroke-width="3.79" stroke-opacity="0.84"/>
+    <path d="M464.5 147.4A187.8 187.8 0 1 0 165.9 369.5" stroke-width="2.74" stroke-opacity="0.83"/>
+    <path d="M474.3 164.0A189.4 189.4 0 1 0 154.9 359.7" stroke-width="3.50" stroke-opacity="0.98"/>
+    <path d="M467.6 148.0A190.2 190.2 0 1 0 173.7 380.2" stroke-width="1.85" stroke-opacity="0.81"/>
+    <path d="M470.8 154.4A190.2 190.2 0 1 0 166.7 373.6" stroke-width="3.13" stroke-opacity="0.88"/>
+    <path d="M466.6 142.0A192.3 192.3 0 1 0 148.5 356.4" stroke-width="1.81" stroke-opacity="0.84"/>
+    <path d="M464.3 135.4A193.7 193.7 0 1 0 153.1 364.2" stroke-width="1.21" stroke-opacity="0.94"/>
+    <path d="M473.4 150.1A194.4 194.4 0 1 0 159.6 372.5" stroke-width="3.54" stroke-opacity="0.77"/>
+    <path d="M467.4 136.1A196.0 196.0 0 1 0 140.1 351.3" stroke-width="1.89" stroke-opacity="0.75"/>
+    <path d="M464.0 130.8A195.9 195.9 0 1 0 148.6 362.4" stroke-width="3.20" stroke-opacity="0.82"/>
+    <path d="M460.4 122.3A197.8 197.8 0 1 0 142.4 357.5" stroke-width="1.49" stroke-opacity="0.83"/>
+    <path d="M458.9 119.9A198.0 198.0 0 0 0 121.8 324.2" stroke-width="1.30" stroke-opacity="0.78"/>
+    <path d="M460.4 118.2A200.2 200.2 0 0 0 114.6 313.5" stroke-width="3.19" stroke-opacity="0.65"/>
+    <path d="M449.6 104.7A200.3 200.3 0 0 0 111.2 305.0" stroke-width="2.24" stroke-opacity="0.56"/>
+    <path d="M446.2 99.1A201.7 201.7 0 0 0 109.5 304.2" stroke-width="2.11" stroke-opacity="0.59"/>
+    <path d="M427.2 79.4A203.3 203.3 0 0 0 102.4 285.7" stroke-width="2.30" stroke-opacity="0.45"/>
+    <path d="M431.9 82.7A203.7 203.7 0 0 0 97.7 261.6" stroke-width="2.84" stroke-opacity="0.53"/>
+  </g>
+
+  <g filter="url(#hand)" fill="none" stroke="#262d2d" stroke-linecap="round" stroke-linejoin="round">
+    <!-- MKJ -->
+    <g stroke-width="3.4" transform="translate(-28 14)">
+      <path d="M262 196 L266 122 L292 176 L318 120 L323 196"/>
+      <path d="M352 120 L350 196"/>
+      <path d="M394 120 L354 160 L397 196"/>
+      <path d="M432 118 C435 150 437 178 429 194 C421 209 402 209 396 196"/>
+    </g>
+
+    <g stroke-width="3">
+      <!-- terapeutka w fotelu (kontur jak w logo) -->
+      <circle cx="176" cy="226" r="14"/>
+      <path d="M166 242 C156 262 154 286 160 304 L214 305 C222 305 224 312 223 318 L222 352"/>
+      <path d="M186 242 C194 258 198 272 198 284 L232 285 C239 285 241 291 241 297 L240 352"/>
+      <path d="M222 352 H246"/>
+      <path d="M184 256 C192 268 202 276 214 280"/>
+      <!-- fotel -->
+      <path d="M148 256 C142 284 144 310 152 322 H226"/>
+      <path d="M158 322 V350 M222 322 V340"/>
+
+      <!-- pacjent na kozetce (głowa na podniesionym oparciu po prawej) -->
+      <circle cx="438" cy="262" r="13"/>
+      <path d="M426 272 C410 282 394 290 380 291 C368 291 360 280 350 279 C338 278 328 290 318 295 C310 298 309 305 316 305 H384"/>
+      <path d="M418 278 C410 288 400 294 388 296"/>
+      <!-- kozetka -->
+      <path d="M298 306 H450 C458 296 462 280 462 262"/>
+      <path d="M296 306 C292 312 294 318 300 318 H452 C458 318 460 312 456 306"/>
+      <path d="M306 318 V340 M446 318 V340"/>
+    </g>
+
+    <!-- fala wznosząca się w prawo, jak w logo -->
+    <path d="M110 372 C190 352 250 378 330 364 S470 322 560 300" stroke-width="2.6"/>
+  </g>
+</svg>
